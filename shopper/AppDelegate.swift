@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var productListCoordinator: Coordinator?
+    var router: Router?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        router = Router()
+        productListCoordinator = ProductListCoordinator(router: router!)
+        window?.rootViewController = router?.naviagationController
+        productListCoordinator?.start()
         return true
     }
 

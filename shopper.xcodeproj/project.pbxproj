@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		BB68D19E23B057D400FF5428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68D19D23B057D400FF5428 /* AppDelegate.swift */; };
-		BB68D1A023B057D400FF5428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68D19F23B057D400FF5428 /* ViewController.swift */; };
-		BB68D1A323B057D400FF5428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB68D1A123B057D400FF5428 /* Main.storyboard */; };
+		BB68D1A023B057D400FF5428 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68D19F23B057D400FF5428 /* ProductListViewController.swift */; };
 		BB68D1A523B057D500FF5428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB68D1A423B057D500FF5428 /* Assets.xcassets */; };
 		BB68D1A823B057D500FF5428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB68D1A623B057D500FF5428 /* LaunchScreen.storyboard */; };
 		BB68D1B323B057D500FF5428 /* shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68D1B223B057D500FF5428 /* shopperTests.swift */; };
 		BBA3085223B05AE0006E3145 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBA3085123B05AE0006E3145 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBA3085423B05AF5006E3145 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA3085123B05AE0006E3145 /* SnapKit.framework */; };
+		BBF3412623B1021D00582DB8 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412523B1021D00582DB8 /* ProductListTableViewCell.swift */; };
+		BBF3412923B1178000582DB8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412823B1178000582DB8 /* Coordinator.swift */; };
+		BBF3412B23B117AC00582DB8 /* ProductListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412A23B117AC00582DB8 /* ProductListCoordinator.swift */; };
+		BBF3412D23B1198300582DB8 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412C23B1198300582DB8 /* Routable.swift */; };
+		BBF3412F23B11A9B00582DB8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412E23B11A9B00582DB8 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +48,7 @@
 /* Begin PBXFileReference section */
 		BB68D19A23B057D400FF5428 /* shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB68D19D23B057D400FF5428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB68D19F23B057D400FF5428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BB68D1A223B057D400FF5428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB68D19F23B057D400FF5428 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		BB68D1A423B057D500FF5428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB68D1A723B057D500FF5428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB68D1A923B057D500FF5428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		BB68D1B223B057D500FF5428 /* shopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopperTests.swift; sourceTree = "<group>"; };
 		BB68D1B423B057D500FF5428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBA3085123B05AE0006E3145 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		BBF3412523B1021D00582DB8 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		BBF3412823B1178000582DB8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BBF3412A23B117AC00582DB8 /* ProductListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCoordinator.swift; sourceTree = "<group>"; };
+		BBF3412C23B1198300582DB8 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		BBF3412E23B11A9B00582DB8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,9 @@
 		BB68D19C23B057D400FF5428 /* shopper */ = {
 			isa = PBXGroup;
 			children = (
+				BBF3412723B1176D00582DB8 /* Coordinator */,
+				BBF3412423B1020300582DB8 /* ProductList */,
 				BB68D19D23B057D400FF5428 /* AppDelegate.swift */,
-				BB68D19F23B057D400FF5428 /* ViewController.swift */,
-				BB68D1A123B057D400FF5428 /* Main.storyboard */,
 				BB68D1A423B057D500FF5428 /* Assets.xcassets */,
 				BB68D1A623B057D500FF5428 /* LaunchScreen.storyboard */,
 				BB68D1A923B057D500FF5428 /* Info.plist */,
@@ -121,6 +129,26 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBF3412423B1020300582DB8 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				BB68D19F23B057D400FF5428 /* ProductListViewController.swift */,
+				BBF3412523B1021D00582DB8 /* ProductListTableViewCell.swift */,
+				BBF3412A23B117AC00582DB8 /* ProductListCoordinator.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		BBF3412723B1176D00582DB8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BBF3412823B1178000582DB8 /* Coordinator.swift */,
+				BBF3412C23B1198300582DB8 /* Routable.swift */,
+				BBF3412E23B11A9B00582DB8 /* Router.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +235,6 @@
 			files = (
 				BB68D1A823B057D500FF5428 /* LaunchScreen.storyboard in Resources */,
 				BB68D1A523B057D500FF5428 /* Assets.xcassets in Resources */,
-				BB68D1A323B057D400FF5428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB68D1A023B057D400FF5428 /* ViewController.swift in Sources */,
+				BBF3412923B1178000582DB8 /* Coordinator.swift in Sources */,
+				BBF3412D23B1198300582DB8 /* Routable.swift in Sources */,
+				BB68D1A023B057D400FF5428 /* ProductListViewController.swift in Sources */,
+				BBF3412F23B11A9B00582DB8 /* Router.swift in Sources */,
 				BB68D19E23B057D400FF5428 /* AppDelegate.swift in Sources */,
+				BBF3412B23B117AC00582DB8 /* ProductListCoordinator.swift in Sources */,
+				BBF3412623B1021D00582DB8 /* ProductListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +281,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BB68D1A123B057D400FF5428 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB68D1A223B057D400FF5428 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BB68D1A623B057D500FF5428 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
