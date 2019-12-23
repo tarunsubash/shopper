@@ -13,6 +13,8 @@
 		BB68D1A523B057D500FF5428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB68D1A423B057D500FF5428 /* Assets.xcassets */; };
 		BB68D1A823B057D500FF5428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB68D1A623B057D500FF5428 /* LaunchScreen.storyboard */; };
 		BB68D1B323B057D500FF5428 /* shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68D1B223B057D500FF5428 /* shopperTests.swift */; };
+		BBA3085223B05AE0006E3145 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBA3085123B05AE0006E3145 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BBA3085423B05AF5006E3145 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA3085123B05AE0006E3145 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BBA3084E23B05995006E3145 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBA3085223B05AE0006E3145 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BB68D19A23B057D400FF5428 /* shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB68D19D23B057D400FF5428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +52,7 @@
 		BB68D1AE23B057D500FF5428 /* shopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB68D1B223B057D500FF5428 /* shopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopperTests.swift; sourceTree = "<group>"; };
 		BB68D1B423B057D500FF5428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA3085123B05AE0006E3145 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA3085423B05AF5006E3145 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +77,11 @@
 		BB68D19123B057D300FF5428 = {
 			isa = PBXGroup;
 			children = (
+				BBA3085123B05AE0006E3145 /* SnapKit.framework */,
 				BB68D19C23B057D400FF5428 /* shopper */,
 				BB68D1B123B057D500FF5428 /* shopperTests */,
 				BB68D19B23B057D400FF5428 /* Products */,
+				BBA3085323B05AF5006E3145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +116,13 @@
 			path = shopperTests;
 			sourceTree = "<group>";
 		};
+		BBA3085323B05AF5006E3145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +133,7 @@
 				BB68D19623B057D400FF5428 /* Sources */,
 				BB68D19723B057D400FF5428 /* Frameworks */,
 				BB68D19823B057D400FF5428 /* Resources */,
+				BBA3084E23B05995006E3145 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,6 +389,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = shopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = shopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
