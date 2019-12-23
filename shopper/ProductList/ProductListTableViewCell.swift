@@ -37,9 +37,8 @@ class ProductListTableViewCell: UITableViewCell {
     }
     
     func buildView() {
-        contentView.addSubview(productPrice)
-        contentView.addSubview(productTitle)
-        contentView.addSubview(productImageView)
+        contentView.addSubViews([productImageView, productTitle, productPrice])
+        
         productImageView.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(5)
             make.bottom.equalToSuperview().offset(-5)
