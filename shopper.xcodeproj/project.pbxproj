@@ -20,6 +20,7 @@
 		BBF3412D23B1198300582DB8 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412C23B1198300582DB8 /* Routable.swift */; };
 		BBF3412F23B11A9B00582DB8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3412E23B11A9B00582DB8 /* Router.swift */; };
 		BBF3413423B120F400582DB8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3413323B120F400582DB8 /* UIView+Extensions.swift */; };
+		BBF3413723B1216A00582DB8 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3413623B1216A00582DB8 /* ProductModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BBF3412C23B1198300582DB8 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		BBF3412E23B11A9B00582DB8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BBF3413323B120F400582DB8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BBF3413623B1216A00582DB8 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		BBF3412423B1020300582DB8 /* ProductList */ = {
 			isa = PBXGroup;
 			children = (
+				BBF3413523B1215D00582DB8 /* Models */,
 				BB68D19F23B057D400FF5428 /* ProductListViewController.swift */,
 				BBF3412523B1021D00582DB8 /* ProductListTableViewCell.swift */,
 				BBF3412A23B117AC00582DB8 /* ProductListCoordinator.swift */,
@@ -160,6 +163,14 @@
 				BBF3413323B120F400582DB8 /* UIView+Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BBF3413523B1215D00582DB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBF3413623B1216A00582DB8 /* ProductModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				BBF3412D23B1198300582DB8 /* Routable.swift in Sources */,
 				BB68D1A023B057D400FF5428 /* ProductListViewController.swift in Sources */,
 				BBF3412F23B11A9B00582DB8 /* Router.swift in Sources */,
+				BBF3413723B1216A00582DB8 /* ProductModel.swift in Sources */,
 				BB68D19E23B057D400FF5428 /* AppDelegate.swift in Sources */,
 				BBF3412B23B117AC00582DB8 /* ProductListCoordinator.swift in Sources */,
 				BBF3413423B120F400582DB8 /* UIView+Extensions.swift in Sources */,
